@@ -18,7 +18,7 @@ source cv-venv/bin/activate
 pip install tensorflow-gpu
 
 # get source code
-git clone git@gitlab.com:ggml/person-detection.git
+git clone git@github.com:greenglobal/person-detection.git
 
 cd person-detection
 pip install -r requirements.txt
@@ -51,12 +51,11 @@ For more info:
 
 Person dataset:
 
-- http://49.156.52.21:7777/dataset/person/
+- http://49.156.52.21:7777/files/dataset/person/person-full.tar.gz
 
 
 ```
 # cd workspace
-wget http://49.156.52.21:7777/dataset/person/person-full.tar.gz
 tar person-full.tar.gz -zxvf -C person-detection/temp
 
 # now we got the `person-full` directory, check it:
@@ -90,7 +89,7 @@ Useful links:
 
 List of checkpoints:
 
-- http://49.156.52.21:7777/checkpoints/
+- http://49.156.52.21:7777/files/checkpoints/
 
 
 ```
